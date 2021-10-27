@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GallardoExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text=""/>
+            <Label x:Name = "lblUsuario" />
+            <Label x:Name = "lblClave" />
+            <Entry x:Name="txtUsuario" IsReadOnly="False" FontSize="14"/>
+            <Entry x:Name="txtClave" IsReadOnly="False" FontSize="14"/>
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                   
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+                
+                <Label Text="Monto Inicial" Grid.Row="0" Grid.Column="0" FontSize="14"/>
+                <Entry x:Name="txtMonto" Grid.Row="1" Grid.Column="0" FontSize="10"/>
+                <Label Text="Monto a pagar: " Grid.Row="0" Grid.Column="1" FontSize="14"/>
+                <Entry x:Name="txtFinal" IsReadOnly="True" Grid.Row="1" Grid.Column="1" FontSize="10"/>
+                </Grid>
+            <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked" />
+            <Label/>
+            <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked"/>
+            
+                </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

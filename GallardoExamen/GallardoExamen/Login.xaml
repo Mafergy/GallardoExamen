@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GallardoExamen.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Image Source="logo.png"/>
+            </StackLayout>
+            <Frame BackgroundColor="#F577C2" Padding="18" CornerRadius="0">
+                <Label Text="REGISTRO ESTUDIANTES" HorizontalTextAlignment="Center" TextColor="#E7F4F1" FontSize="24"/>
+                
+            </Frame>
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese su usuario"/>
+            <Entry x:Name="txtClave" Placeholder="Ingrese la clave" IsPassword="True"/>
+            
+            <Button x:Name="btnAbrir" Text="LOGIN" Clicked="btnAbrir_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
